@@ -1,66 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:ecocycling/screens/login_page.dart';
 
 
-void main(){
-  BuildContext context;
+void main() => runApp(MyApp());
 
-
-
-  runApp(MaterialApp(
-    home: Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.green[500],
-        title: Text('Recent Ratings',style: TextStyle(
-            fontSize: 30.0,
-            color: Colors.black,
-            fontWeight: FontWeight.w400
-          ),
-          textAlign: TextAlign.left,
-        ),
-        leading: IconButton(
-          icon:Icon(Icons.arrow_back),
-          onPressed: () => Navigator.of(context).pop(null),
-        ),
-      ),
-
-      body: Column(
-         children: <Widget>[
-           Boxes()
-         ],
-      ),
-
-    ),
-  ));
-
-}
-
-
-
- class Boxes extends StatelessWidget{
-
+class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        height: 300,
-        width: 300,
-        color: Colors.white,
-        child: Card(
-          child: Padding(
-          ,
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Login(),
     );
-
-
-
   }
-
-
-
-
- }
+}
 
 
 
