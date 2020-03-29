@@ -27,13 +27,40 @@ void main(){
 
       body: Column(
          children: <Widget>[
-
+           Boxes()
          ],
       ),
 
     ),
   ));
+
 }
+
+
+
+ class Boxes extends StatelessWidget{
+
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        height: 300,
+        width: 300,
+        color: Colors.white,
+        child: Card(
+          child: Padding(
+          ,
+        ),
+      ),
+    );
+
+
+
+  }
+
+
+
+
+ }
 
 
 
